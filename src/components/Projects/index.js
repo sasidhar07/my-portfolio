@@ -5,7 +5,7 @@ const Projects = () => {
     const projects = [
         { name: 'Jobby App', description: 'A job search application', link: 'https://sasiproject030.ccbp.tech' },
         { name: 'NxtWatch', description: 'A video streaming platform', link: 'https://sasiproject035.ccbp.tech' },
-        { name: 'Portfolio', description: 'A portfolio showcasing my projects', link: 'https://example.com/project3' },
+        { name: 'Portfolio', description: 'A portfolio showcasing my projects', link: 'https://sasidhar07.github.io/my-portfolio/' },
     ];
 
     return (
