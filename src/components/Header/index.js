@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <div className="header">
-            <a className="title" href="/">Portfolio</a>
+            <a className="title" >Portfolio</a>
             <div className="menu">
                 <button className="menuButton" onClick={() => changeMenu(!menuOpen)}>
                     <GiHamburgerMenu className="hamburgerIcon" />
