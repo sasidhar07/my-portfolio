@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
-import './index.css'; // Import the CSS file
+import './index.css'; 
+import resume from "../assets/updated_resume.pdf"
+
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -54,7 +56,7 @@ const Contact = () => {
                         <FaGithub className="socialIcon" />
                     </a>
                 </div>
-                <a className="downloadButton" href="/assets/updated_resume.pdf" download>
+                <a className="downloadButton" href={resume} download>
                     Download Resume
                 </a>
 
