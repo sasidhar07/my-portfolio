@@ -1,0 +1,124 @@
+.aboutImg {
+    height: 45vh;
+    width: 38vh;
+    margin: auto;
+    background-color: whitesmoke;
+    margin-right: 20px;
+}
+
+
+.aboutCard {
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 30%;
+    margin-bottom: 5%;
+}
+
+.aboutMenu {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+.aboutMenuItems {
+    position: relative;
+    cursor: pointer;
+}
+
+.aboutMenuItems::after {
+    content: "";
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    background-color: #60d3db;
+    transition: width 0.5s;
+    height: 3px;
+    position: absolute;
+}
+
+.aboutMenuItems.active::after {
+    width: 100%;
+}
+
+.skillsSection, .educationSection, .favouriteSection {
+    height: 20vh; /* Set height */
+    margin-top: 7px;
+    overflow:auto ;
+    scrollbar-width: none; 
+
+    
+}
+
+.skillsSection h2, .educationSection h2, .favouriteSection h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skillsSection ul, .educationSection p, .favouriteSection p {
+    font-size: 18px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill span {
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.progressBar {
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #60d3db;
+    border-radius: 5px;
+    height: 5px;
+}
+
+.educationDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.educationItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+}
+.favouriteSection ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.favouriteSection li {
+    margin-bottom: 10px;
+
+}
+@media screen and (max-width:750px){
+    .aboutCard{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutImg {
+        margin: auto;
+    }
+}

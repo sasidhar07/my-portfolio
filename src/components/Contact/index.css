@@ -1,0 +1,126 @@
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo, .contactForm {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contactTitle {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contactIcon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+}
+
+.contactText {
+    font-size: 18px;
+    margin: 0;
+}
+
+.contactSocial {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.socialIcon:hover {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.downloadButton {
+    display: inline-block;
+    background-color: #60d3db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.downloadButton:hover {
+    background-color: #4aa2b7;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInput, .contactTextarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contactTextarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type='submit'] {
+    background-color: #60d3db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+    background-color: #4aa2b7;
+}
+.contactTextarea ,.contactInput ,.contactInput{
+    outline: none;
+}
+@media screen and (max-width:750px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        margin-top: 5%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .contactForm{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .contactInfo{
+        width: 100%;
+    }
+    
+}
+.submitFormButton{
+    width: 20vw;
+}

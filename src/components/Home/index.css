@@ -1,0 +1,108 @@
+.homeContainer {
+    min-height: 90vh;
+    background-color: rgb(35, 31, 31);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin-bottom: 40px; /* Space between card and content */
+}
+
+.homeAvatarImg {
+    width: 25vw;
+    z-index: 1;
+    margin-bottom: 0;
+    border-radius: 100%;
+    animation: floating 3s ease-in-out 0s infinite alternate;
+}
+
+.homeCard {
+    padding: 70px;
+    width: 40vw;
+}
+
+.homeTitle {
+    font-size: 60px;
+    background: linear-gradient(90deg, rgb(203, 215, 216), rgb(72, 77, 77));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contPara {
+    font-size: 23px;
+    color: rgb(216, 216, 216);
+    margin-bottom: 40px;
+}
+
+.contactLink {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -10px);
+    }
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    color: rgb(216, 216, 216);
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .homeTitle {
+        margin: 0;
+        font-size: 40px;
+    }
+    .homeAvatarImg {
+        width: 25vw;
+    }
+    .homeContainer{
+        padding-top: 30%;
+    }
+  
+    
+}
+
+.bottomBlur {
+    position: absolute;
+    right: 0;
+    width: 17vw;
+    height: 50vw;
+    min-width: 30px;
+    top: 246px;
+    border-radius: 764px;
+    background: rgba(84, 85, 86, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
